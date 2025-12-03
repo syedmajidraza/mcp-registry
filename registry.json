@@ -1,16 +1,13 @@
 {
   "version": "1.0",
-  "servers": [
-    {
-      "name": "markitdown",
-      "description": "Approved markdown MCP server",
-      "transport": "stdio",
-      "stdio": {
-        "command": "markitdown-mcp",
-        "args": []
-      },
-      "tags": ["approved","prod"],
-      "public": false
-    }
+	"microsoft/markitdown": {
+			"type": "stdio",
+			"command": "uvx",
+			"args": [
+				"markitdown-mcp==0.0.1a4"
+			],
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.0.0"
+		}
   ]
 }
