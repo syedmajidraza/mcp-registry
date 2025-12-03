@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-	"microsoft/markitdown": {
+  "microsoft/markitdown": {
 			"type": "stdio",
 			"command": "uvx",
 			"args": [
