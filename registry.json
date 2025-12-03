@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "servers": [
+    {
+      "name": "markitdown",
+      "description": "Approved markdown MCP server",
+      "transport": "stdio",
+      "stdio": {
+        "command": "markitdown-mcp",
+        "args": []
+      },
+      "tags": ["approved","prod"],
+      "public": false
+    }
+  ]
+}
