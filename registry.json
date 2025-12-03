@@ -1,13 +1,33 @@
+registry.json
+
 {
-  "version": "1.0",
-  "microsoft/markitdown": {
-			"type": "stdio",
-			"command": "uvx",
-			"args": [
-				"markitdown-mcp==0.0.1a4"
-			],
-			"gallery": "https://api.mcp.github.com",
-			"version": "1.0.0"
-		}
-  ]
+
+"version": "1.0",
+
+"servers": [
+
+{
+
+"name": "filesystem",
+
+"description": "Approved Filesystem MCP server",
+
+"transport": "stdio",
+
+"stdio": {
+
+"command": "node",
+
+"args": ["/absolute/path/to/fs-server/index.js"]
+
+},
+
+"tags": ["approved","prod"],
+
+"public": false
+
+}
+
+]
+
 }
