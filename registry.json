@@ -1,33 +1,17 @@
-registry.json
-
 {
-
-"version": "1.0",
-
-"servers": [
-
-{
-
-"name": "filesystem",
-
-"description": "Approved Filesystem MCP server",
-
-"transport": "stdio",
-
-"stdio": {
-
-"command": "node",
-
-"args": ["/absolute/path/to/fs-server/index.js"]
-
-},
-
-"tags": ["approved","prod"],
-
-"public": false
-
-}
-
-]
-
+  "version": "1.0",
+  "servers": [
+    {
+      "name": "markitdown",
+      "description": "Approved markdown MCP server",
+      "transport": "stdio",
+      "stdio": {
+        "command": "uvx",
+        "args": ["markitdown-mcp==0.0.1a4"]
+      },
+      "version": "1.0.0",
+      "tags": ["approved", "prod"],
+      "public": false
+    }
+  ]
 }
