@@ -1,0 +1,13 @@
+{
+  "version": "1",
+  "servers": [
+    {
+      "id": "example-github",
+      "name": "GitHub MCP Server",
+      "type": "http",
+      "url": "https://api.githubcopilot.com",
+      "public": true,
+      "tags": ["github"]
+    }
+  ]
+}
